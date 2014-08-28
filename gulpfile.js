@@ -45,7 +45,7 @@ gulp.task('ts', function() {
 // Discovers all AMD dependencies, concatenates together all required .js files, minifies them
 gulp.task('js', ['ts'], function () {
     return rjs(requireJsOptimizerConfig)
-        .pipe(uglify({ preserveComments: 'some' }))
+        //.pipe(uglify({ preserveComments: 'some' }))
         .pipe(gulp.dest('./dist/'));
 });
 
