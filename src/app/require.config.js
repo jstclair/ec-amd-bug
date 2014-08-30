@@ -10,11 +10,10 @@ var require = {
         "knockout-projections": "bower_modules/knockout-projections/dist/knockout-projections",
         "signals":              "bower_modules/js-signals/dist/signals.min",
         "text":                 "bower_modules/requirejs-text/text",
-        "editableCell":         "vendor/editableCell",
-        "preEditableCell":      "vendor/preEditableCell",
+        "editableCell":         "vendor/editableCell.min"
     },
     shim: {
         "bootstrap": { deps: ["jquery"] },
-        "editableCell": { deps: ["jquery", "knockout", "preEditableCell"] }
+        "editableCell": { deps: ["jquery", "knockout"] }
     }
 };
